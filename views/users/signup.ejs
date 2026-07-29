@@ -1,0 +1,40 @@
+<% layout("layout/basic") -%>
+
+<div class="row">
+    <div class="col-12 col-md-8 mx-auto">
+        <h1>Sign up on wanderlust</h1>
+        <form action="/signup" method="post" novalidate class="needs-validation">
+            
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" name="username" placeholder="enter username" class="form-control" required>
+                <div class="valid-feedback">
+                Looks good!
+                </div>
+                 <div class="invalid-feedback">
+                This field is required
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="enter a valid email" class="form-control" required>
+
+                <div class="invalid-feedback">
+                This field is required
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" placeholder="enter password" class="form-control" required>
+
+                <div class="invalid-feedback">
+                This field is required
+                </div>
+            </div>
+
+            <button class="btn btn-success">Signup</button>
+        </form>
+    </div>
+</div>
